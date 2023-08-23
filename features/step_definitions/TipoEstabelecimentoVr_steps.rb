@@ -21,7 +21,7 @@ Então("a API irá retornar os dados do cadastro de tipos de estabeleciemntos re
 
   $parsed_response = JSON.parse($response.body)
 
-  # Obtém a matriz de respostas da chave "typeOfEstablishment"
+  # Obtém a matriz das respostas da chave "typeOfEstablishment"
   $type_of_establishments = $parsed_response["typeOfEstablishment"].map { |item| item }
 
   # Seleciona um elemento aleatório da matriz
